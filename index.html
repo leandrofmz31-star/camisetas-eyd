@@ -239,6 +239,18 @@
     .showcase-visual{order:-1;}
   }
 
+  /* ---------- VIDEO AD ---------- */
+  .video-ad{background:var(--white);}
+  .section-head.center{margin-inline:auto;text-align:center;}
+  .video-frame{
+    max-width:380px;margin:0 auto;
+    border-radius:26px;overflow:hidden;
+    background:#000;
+    box-shadow:var(--shadow);
+    border:6px solid var(--navy-deep);
+  }
+  .video-frame video{width:100%;height:auto;display:block;aspect-ratio:9/16;object-fit:cover;}
+
   /* ---------- CTA BANNER ---------- */
   .cta-banner{
     background:linear-gradient(120deg, var(--blue) 0%, #1c4fc0 100%);
@@ -450,6 +462,23 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-11.8 7.8L3 21l1.8-6.1A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 10.5c.3 2.6 2.4 4.7 5 5"/></svg>
           Cotiza tu uniforme
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VIDEO AD ================= -->
+  <section class="video-ad">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Míralo en acción</span>
+        <h2>Nuestro anuncio</h2>
+        <p>Un vistazo rápido a la colección Camisetas E&amp;D.</p>
+      </div>
+      <div class="video-frame">
+        <video controls preload="metadata" poster="video/poster.jpg" playsinline>
+          <source src="video/anuncio-eyd.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video. <a href="video/anuncio-eyd.mp4">Descarga el video aquí</a>.
+        </video>
       </div>
     </div>
   </section>
